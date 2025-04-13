@@ -1,0 +1,29 @@
+class Hotel:
+    def __init__(self, RoomNumber, RoomType, IsBook ):#input the room info
+        self.RoomNumber = RoomNumber
+        self.RoomType = RoomType
+        self.IsBook = IsBook
+        
+        def BookRoom(self):
+            if self.IsBook:#True for the avaible
+                self.IsBook = True
+                print(f"Roomnumber: {self.RoomNumber} rent is success")
+            else:
+                print(f"Roomnumber: {self.RoomNumber} not avaible ")
+                
+            
+        def CancelRoom(self):
+            if self.IsBook:#False for the eqiation
+                self.IsBook = False
+                print(f"Roomnumber: {self.RoomNumber} rent is success")
+            else:
+                print(f"Roomnumber: {self.RoomNumber} not avaible ")
+                
+    room1 = Hotel(123, "2 bedroom", "tomper")
+    room2 = Hotel(12, "1 bed room", "cap")
+    
+    room1.BookRoom()
+    room1.CancelRoom()
+    room2.BookRoom()
+    room2.CancelRoom()
+       
